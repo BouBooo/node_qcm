@@ -2,9 +2,19 @@
 Projet NodeJS B2 
 
 Le programme est un quizz qui comprend 3 Thèmes différents :
-- Programmation  -p, --programmation)
-- Jeux vidéos  (-j, --jeux_videos)
-- Musique  (-m, --musique)
+- Programmation  
+- Jeux vidéos  
+- Musique  
+
+## Options de lancement:
+
+| Commandes                      | Description|
+| ---                            | ---|
+| `-V, --version`                | Affiche la version de la commande|
+| `-p, --programmation`          | Choisir le thème : Prgrammation|
+| `-j, --jeux_videos`            | Choisir le thème : Jeux vidéos|
+| `-m, --musique`                | Choisir le thème : Musique|
+| `--help`                       | Page d'aide de la commande|
 
 Choisir un thème est obligatoire, pour plus d'informations -> node index.js --help 
 
