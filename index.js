@@ -228,6 +228,7 @@ function endGame() {
         console.log(`Pas ouf du tout ça... Votre score est de ${points}/5.`.error);
         console.log('----------');
     }
+    // On écrit le score + date à laquelle il a été réalisé dans un fichier txt 
     let now = new Date();
     fs.writeFile("score.txt", "Le " + date.format(now, 'YYYY/MM/DD HH:mm:ss') + " une partie a été jouée et le score était de : " + points , function(err) {
         if(err) {
@@ -264,7 +265,8 @@ const main = async () => {
 
     const question1 = () => {
         return new Promise((resolve, reject) => {
-
+            
+            // Selon le thème, on affiche les questions correspondantes
             if (program.programmation) {
                     inquirer.prompt([{
                         name: 'questions',
