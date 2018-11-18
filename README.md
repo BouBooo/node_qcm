@@ -11,7 +11,7 @@ Le programme est un quizz qui comprend 3 Thèmes différents :
 | Commandes                      | Description|
 | ---                            | ---|
 | `-V, --version`                | Affiche la version de la commande|
-| `-p, --programmation`          | Choisir le thème : Prgrammation|
+| `-p, --programmation`          | Choisir le thème : Programmation|
 | `-j, --jeux_videos`            | Choisir le thème : Jeux vidéos|
 | `-m, --musique`                | Choisir le thème : Musique|
 | `--help`                       | Page d'aide de la commande|
