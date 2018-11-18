@@ -8,6 +8,8 @@
 const colors = require('colors');
 const program = require('commander');
 const inquirer = require('inquirer');
+const fs = require('fs');
+const date = require('date-and-time');
 
  
 
@@ -225,7 +227,15 @@ function endGame() {
         console.log('----------');
         console.log(`Pas ouf du tout ça... Votre score est de ${points}/5.`.error);
         console.log('----------');
-    }        
+    }
+    let now = new Date();
+    fs.writeFile("score.txt", "Le " + date.format(now, 'YYYY/MM/DD HH:mm:ss') + " une partie a été jouée et le score était de : " + points , function(err) {
+        if(err) {
+            return console.log(err);
+        }
+    
+        console.log("\n \n Votre score a été sauvegardé dans le fichier score.txt");
+    });    
 }
 
 
@@ -238,8 +248,8 @@ const main = async () => {
     await question3()
     await question4()
     await question5()
-    endGame();
-    retry();
+    await endGame();
+    await retry();
   }
 
 
