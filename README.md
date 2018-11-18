@@ -1,4 +1,4 @@
-# Node_project
+# node_qcm
 Projet NodeJS B2 
 
 Le programme est un quizz qui comprend 3 Thèmes différents :
